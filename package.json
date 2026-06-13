@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "PATH=$HOME/.nvm/versions/node/v24.13.0/bin:$PATH mint dev",
+    "validate": "PATH=$HOME/.nvm/versions/node/v24.13.0/bin:$PATH mint validate",
+    "broken-links": "PATH=$HOME/.nvm/versions/node/v24.13.0/bin:$PATH mint broken-links"
+  }
+}
