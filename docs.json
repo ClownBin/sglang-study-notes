@@ -13,35 +13,68 @@
   "navigation": {
     "groups": [
       {
-        "group": "开始",
+        "group": "总览",
         "pages": [
           "index"
         ]
       },
       {
-        "group": "DeepSeek 推理链路",
-        "root": "deepseek_inference/index",
+        "group": "推理与缓存",
         "pages": [
-          "deepseek_inference/01_repo_map_and_learning_path",
-          "deepseek_inference/02_deepseek_startup_and_loading",
-          "deepseek_inference/03_deepseek_request_inference_flow",
-          "deepseek_inference/04_npu_kernel_bridge",
-          "deepseek_inference/05_startup_demos_and_best_practices"
+          {
+            "group": "deepseek_inference",
+            "pages": [
+              "deepseek_inference/index",
+              "deepseek_inference/01_repo_map_and_learning_path",
+              "deepseek_inference/02_deepseek_startup_and_loading",
+              "deepseek_inference/03_deepseek_request_inference_flow",
+              "deepseek_inference/04_npu_kernel_bridge",
+              "deepseek_inference/05_startup_demos_and_best_practices"
+            ]
+          },
+          {
+            "group": "multi_level_prefix_cache",
+            "pages": [
+              "multi_level_prefix_cache/index",
+              "multi_level_prefix_cache/01_architecture",
+              "multi_level_prefix_cache/02_call_chain",
+              "multi_level_prefix_cache/03_core_code"
+            ]
+          }
         ]
       },
       {
-        "group": "多级 PrefixCache",
-        "root": "multi_level_prefix_cache/index",
+        "group": "硬件与算子",
         "pages": [
-          "multi_level_prefix_cache/01_architecture",
-          "multi_level_prefix_cache/02_call_chain",
-          "multi_level_prefix_cache/03_core_code"
+          {
+            "group": "npu_gpu_feature_diff_20260613_193825",
+            "pages": [
+              "npu_gpu_feature_diff_20260613_193825/index",
+              "npu_gpu_feature_diff_20260613_193825/01_upper_level_feature_diff",
+              "npu_gpu_feature_diff_20260613_193825/02_operator_capability_diff",
+              "npu_gpu_feature_diff_20260613_193825/03_source_map"
+            ]
+          }
         ]
       },
       {
-        "group": "社区与资料",
+        "group": "模型与资料",
         "pages": [
-          "sglang_community_resources/index"
+          {
+            "group": "deepseek_qwen_model_architecture_20260613_203749",
+            "pages": [
+              "deepseek_qwen_model_architecture_20260613_203749/index",
+              "deepseek_qwen_model_architecture_20260613_203749/01_deepseek_v4_architecture",
+              "deepseek_qwen_model_architecture_20260613_203749/02_qwen36_architecture",
+              "deepseek_qwen_model_architecture_20260613_203749/03_architecture_comparison"
+            ]
+          },
+          {
+            "group": "sglang_community_resources",
+            "pages": [
+              "sglang_community_resources/index"
+            ]
+          }
         ]
       }
     ]

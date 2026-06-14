@@ -8,13 +8,53 @@ icon: "book-open"
 
 这里用于保存个人学习、源码分析、推理链路梳理、启动 Demo 和最佳实践类输出。
 
-## 当前场景
+## 作者与仓库
 
-| 场景 | 内容 |
+| 项 | 信息 |
 | --- | --- |
-| [DeepSeek 推理链路](deepseek_inference/index) | SGLang 与 sgl-kernel-npu 两仓分析，DeepSeek 启动加载、一次推理链路、NPU kernel 桥接、启动 Demo 和参数实践 |
-| [多级 PrefixCache](multi_level_prefix_cache/index) | SGLang 多级 PrefixCache / HiCache 架构，L1/L2/L3 缓存链路、核心代码和调用链 |
-| [社区与资料](sglang_community_resources/index) | SGLang 社区群、官方资料与 Ascend NPU 相关入口归档 |
+| 作者仓库 | [ClownBin/sglang-study-notes.git](https://github.com/ClownBin/sglang-study-notes.git) |
+| 联系方式 | [chaobin1993@126.com](mailto:chaobin1993@126.com) |
+
+## 场景入口
+
+左侧导航按 `主题分组 → 场景目录 → 文档页` 展示；下面的卡片保留中文说明，方便快速进入。
+
+<CardGroup cols={3}>
+  <Card title="DeepSeek 推理链路" icon="route" href="deepseek_inference/index">
+    `deepseek_inference`：启动加载、一次推理、NPU kernel 桥接、Demo 与参数实践。
+  </Card>
+  <Card title="多级 PrefixCache" icon="layers" href="multi_level_prefix_cache/index">
+    `multi_level_prefix_cache`：HiCache 架构、L1/L2/L3 缓存、调用链和核心代码。
+  </Card>
+  <Card title="NPU/GPU 能力差异" icon="cpu" href="npu_gpu_feature_diff_20260613_193825/index">
+    `npu_gpu_feature_diff_20260613_193825`：上层特性与底层算子能力差异。
+  </Card>
+  <Card title="DeepSeek/Qwen 模型架构" icon="network" href="deepseek_qwen_model_architecture_20260613_203749/index">
+    `deepseek_qwen_model_architecture_20260613_203749`：模型架构解构和对比。
+  </Card>
+  <Card title="社区与官方资料" icon="messages-square" href="sglang_community_resources/index">
+    `sglang_community_resources`：社区群、官方文档、Roadmap、论文和 NPU 资料入口。
+  </Card>
+</CardGroup>
+
+## 学习路径
+
+```mermaid
+flowchart LR
+    A["先看总览"] --> B["推理链路"]
+    B --> C["PrefixCache"]
+    C --> D["硬件与算子"]
+    D --> E["模型架构"]
+    E --> F["社区与资料"]
+```
+
+## 导航分组
+
+| 主题分组 | 场景目录 | 适合解决的问题 |
+| --- | --- | --- |
+| 推理与缓存 | `deepseek_inference`、`multi_level_prefix_cache` | 服务启动、模型加载、一次请求生命周期、缓存复用 |
+| 硬件与算子 | `npu_gpu_feature_diff_20260613_193825` | NPU/GPU 特性边界、底层 kernel 和算子能力 |
+| 模型与资料 | `deepseek_qwen_model_architecture_20260613_203749`、`sglang_community_resources` | 最新模型结构、官方资料入口、社区协作渠道 |
 
 ## 目录规范
 
